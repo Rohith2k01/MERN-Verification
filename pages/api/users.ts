@@ -1,7 +1,7 @@
 // pages/api/users.ts
 
 import { NextApiRequest, NextApiResponse } from 'next';
-import dbConnect from '../../../lib/mongodb';
+import dbConnect from '../../lib/mongodb';
 import mongoose, { Schema, model, models } from 'mongoose';
 
 const UserSchema = new Schema({

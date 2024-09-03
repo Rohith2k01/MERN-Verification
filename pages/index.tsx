@@ -1,4 +1,3 @@
-// pages/index.tsx
 "use client";
 import { useEffect, useState } from 'react';
 import Registration from './components/Registration/registration'
