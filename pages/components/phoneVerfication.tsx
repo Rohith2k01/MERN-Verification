@@ -15,7 +15,9 @@ const PhoneVerification: React.FC = () => {
   const handleSendVerification = async () => {
     try {
       // Send a POST request to the server to request a verification code
-      const response = await fetch('/api/auth/send-otp-mobile', {
+      // const response = await fetch('/api/auth/send-otp-mobile', {
+        const response = await fetch('http://localhost:4000/send-otp-mobile', {
+
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ phoneNumber }),
@@ -99,3 +101,4 @@ const PhoneVerification: React.FC = () => {
 };
 
 export default PhoneVerification;
+
